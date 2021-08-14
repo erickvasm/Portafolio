@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/asset/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
     <header>
         <a href="#" class="logo">Erick Vasquez</a>
-        <ul>
+        <ul class="desktop-list">
             <li><a href="" class="active">About</a></li>
             <li><a href="">Work</a></li>
             <li><a href="">Contact</a></li>
+        </ul>
+        <ul class="mobile-list">
+            <li><i class="fa fa-home"></i></li>
+            <li><i class="fa fa-cogs"></i></li>
+            <li><i class="fa fa-phone-square"></i></li>
+            <li><i class="fa fa-user"></i></li>
         </ul>
     </header>
     <section>
@@ -32,17 +40,5 @@
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nam incidunt reiciendis eaque doloremque praesentium? Eum alias adipisci, magnam blanditiis aut optio hic praesentium nemo, corporis itaque velit error architecto
         </p>
     </div>
-
-    <script>
-        let text = document.getElementById('text');
-        let btn = document.getElementById('btn');
-
-        window.addEventListener('scroll', function(){
-            let value = window.screenY;
-            text.style.marginTop= value * 1.05 + 'px';
-            btn.style.marginRight = value * 1.05 + 'px';
-
-        })
-    </script>
 </body>
 </html>

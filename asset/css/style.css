@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html {
+    font-size:62.5%;
+    font-family: 'DM Sans', sans-serif;
     scroll-behavior: smooth;
 }
+
 body{
     min-height: 100vh;
     overflow-x: hidden;
@@ -23,7 +28,7 @@ header .logo{
     color: #fff;
     font-weight: 700;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 2.4em;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -31,6 +36,7 @@ header ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5em;
 }
 header ul li{
     list-style: none;
@@ -80,7 +86,7 @@ section img{
     position: absolute;
     color:#fff;
     white-space: nowrap;
-    font-size: 7.5vh;
+    font-size: 10rem;
     z-index: 9;
 }
 #btn{
@@ -107,4 +113,29 @@ section img{
 .sec p{
     font-size: 1em;
     color: #fff;
+}
+.mobile-list{
+    display: none;
+}
+@media only screen and (max-width:800px){
+    .desktop-list{
+        display: none;
+    }
+    .mobile-list{
+        display: block;
+        background-color: teal;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+    .mobile-list i {
+        font-size: 30px;
+
+    }
 }
