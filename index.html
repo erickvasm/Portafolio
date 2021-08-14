@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Erick Vasquez</a>
+        <ul>
+            <li><a href="" class="active">About</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="https://i.ibb.co/SQHkkgJ/stars.png" alt="stars">
+        <h2 id="text">Hello!</h2>
+        <a href="#" id="btn">Explore</a>
+    </section>
+    <div class="sec">
+        <h2>Para</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate, odio voluptatum voluptates alias, ducimus harum blanditiis magnam recusandae laudantium maxime modi doloremque ab cupiditate explicabo voluptatibus porro odit quae.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nam incidunt reiciendis eaque doloremque praesentium? Eum alias adipisci, magnam blanditiis aut optio hic praesentium nemo, corporis itaque velit error architecto!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate, odio voluptatum voluptates alias, ducimus harum blanditiis magnam recusandae laudantium maxime modi doloremque ab cupiditate explicabo voluptatibus porro odit quae.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nam incidunt reiciendis eaque doloremque praesentium? Eum alias adipisci, magnam blanditiis aut optio hic praesentium nemo, corporis itaque velit error architectoLorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate, odio voluptatum voluptates alias, ducimus harum blanditiis magnam recusandae laudantium maxime modi doloremque ab cupiditate explicabo voluptatibus porro odit quae.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nam incidunt reiciendis eaque doloremque praesentium? Eum alias adipisci, magnam blanditiis aut optio hic praesentium nemo, corporis itaque velit error architectoLorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate, odio voluptatum voluptates alias, ducimus harum blanditiis magnam recusandae laudantium maxime modi doloremque ab cupiditate explicabo voluptatibus porro odit quae.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nam incidunt reiciendis eaque doloremque praesentium? Eum alias adipisci, magnam blanditiis aut optio hic praesentium nemo, corporis itaque velit error architectoLorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate, odio voluptatum voluptates alias, ducimus harum blanditiis magnam recusandae laudantium maxime modi doloremque ab cupiditate explicabo voluptatibus porro odit quae.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nam incidunt reiciendis eaque doloremque praesentium? Eum alias adipisci, magnam blanditiis aut optio hic praesentium nemo, corporis itaque velit error architectoLorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate, odio voluptatum voluptates alias, ducimus harum blanditiis magnam recusandae laudantium maxime modi doloremque ab cupiditate explicabo voluptatibus porro odit quae.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nam incidunt reiciendis eaque doloremque praesentium? Eum alias adipisci, magnam blanditiis aut optio hic praesentium nemo, corporis itaque velit error architecto
+        </p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+
+        window.addEventListener('scroll', function(){
+            let value = window.screenY;
+            text.style.marginTop= value * 1.05 + 'px';
+            btn.style.marginRight = value * 1.05 + 'px';
+
+        })
+    </script>
+</body>
+</html>
