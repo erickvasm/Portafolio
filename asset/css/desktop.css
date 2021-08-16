@@ -1,0 +1,27 @@
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active{
+    background-color: #fff;
+    color: #2b1055 ;
+}
+.desktop-list{
+    display: flex;
+}
+.mobile-list{
+    display: none;
+}

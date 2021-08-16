@@ -32,30 +32,20 @@ header .logo{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-header ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-}
-header ul li{
+.mobile-list {
+    position: absolute;
+    top: 15px;
+    right: 15px;
     list-style: none;
-    margin-left: 20px;
-}
-header ul li a{
-    text-decoration: none;
-    padding: 6px 15px;
     color: #fff;
-    border-radius: 20px;
+    font-size: 2.5em;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
 }
-header ul li a:hover,
-header ul li a.active{
-    background-color: #fff;
-    color: #2b1055 ;
-}
-section{
+.hero{
     background-image: linear-gradient(
-        -45deg,#1c2c8d,#27326d);
+        -45deg,#012A4A,#013A63);
     position: relative;
     width: 100%;
     height: 100vh;
@@ -64,16 +54,16 @@ section{
     justify-content: center;
     align-items: center;
 }
-section::before{
+.hero::before{
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top,#1f2e86,transparent);
+    background: linear-gradient(to top,#013A63,transparent);
     z-index: 1000;
 }
-section img{
+.hero__img{
     position: absolute;
     top: 0;
     left: 0;
@@ -82,14 +72,14 @@ section img{
     object-fit: cover;
     pointer-events: none;
 }
-#text{
+#hero__title{
     position: absolute;
     color:#fff;
     white-space: nowrap;
     font-size: 10rem;
     z-index: 9;
 }
-#btn{
+#hero__btn{
     text-decoration: none;
     display: inline-block;
     padding: 8px 30px;
@@ -100,42 +90,70 @@ section img{
     z-index: 9;
     transform: translateY(100px);
 }
-.sec{
+.main__about{
     position: relative;
     padding: 100px;
-    background-color: #1f2e86;
+    background-color: #013A63;
 }
-.sec h2{
-    font-size: 3.2;
-    margin-bottom: 10px;
+.main__about h2{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
     color: #fff;
 }
-.sec p{
+.main__about h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+.main__about h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+.main__about p{
     font-size: 1em;
     color: #fff;
 }
-.mobile-list{
+.desktop-list{
     display: none;
 }
-@media only screen and (max-width:800px){
-    .desktop-list{
-        display: none;
-    }
-    .mobile-list{
-        display: block;
-        background-color: teal;
-        color: white;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        padding: 10px;
-    }
-    .mobile-list i {
-        font-size: 30px;
+footer {
+    display: flex;  
+    width: 100%;
+    height: 150px;
+    background-color: #013A63;
+}
+footer section {
+    display: flex;
+    width: 50%; 
+    justify-content: center; 
+    align-items: center; 
+}
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none; /* Para quitar bullets de lista */
+}
+.left li {
+    margin: 10px 0; 
+}
 
-    }
+.left a {
+    text-decoration: none; 
+    color: white;
 }

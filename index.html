@@ -5,40 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/asset/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="/asset/css/desktop.css" media="(min-width: 1024px)">
+    
+    <title>Erick Vasquez</title>
 </head>
 <body>
     <header>
         <a href="#" class="logo">Erick Vasquez</a>
         <ul class="desktop-list">
-            <li><a href="" class="active">About</a></li>
+            <li><a href="#about" class="active">About</a></li>
             <li><a href="">Work</a></li>
             <li><a href="">Contact</a></li>
         </ul>
         <ul class="mobile-list">
-            <li><i class="fa fa-home"></i></li>
-            <li><i class="fa fa-cogs"></i></li>
-            <li><i class="fa fa-phone-square"></i></li>
-            <li><i class="fa fa-user"></i></li>
-        </ul>
+            <li><i class="bi bi-list"></i></li>
+        </ul>     
     </header>
-    <section>
-        <img src="https://i.ibb.co/SQHkkgJ/stars.png" alt="stars">
-        <h2 id="text">Hello!</h2>
-        <a href="#" id="btn">Explore</a>
+    <section class="hero">
+        <img src="https://i.ibb.co/SQHkkgJ/stars.png" alt="stars" class="hero__img">
+        <h2 id="hero__title">Hello!</h2>
+        <a href="#" id="hero__btn">Explore</a>
     </section>
-    <div class="sec">
-        <h2>Para</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate, odio voluptatum voluptates alias, ducimus harum blanditiis magnam recusandae laudantium maxime modi doloremque ab cupiditate explicabo voluptatibus porro odit quae.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nam incidunt reiciendis eaque doloremque praesentium? Eum alias adipisci, magnam blanditiis aut optio hic praesentium nemo, corporis itaque velit error architecto!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate, odio voluptatum voluptates alias, ducimus harum blanditiis magnam recusandae laudantium maxime modi doloremque ab cupiditate explicabo voluptatibus porro odit quae.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nam incidunt reiciendis eaque doloremque praesentium? Eum alias adipisci, magnam blanditiis aut optio hic praesentium nemo, corporis itaque velit error architectoLorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate, odio voluptatum voluptates alias, ducimus harum blanditiis magnam recusandae laudantium maxime modi doloremque ab cupiditate explicabo voluptatibus porro odit quae.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nam incidunt reiciendis eaque doloremque praesentium? Eum alias adipisci, magnam blanditiis aut optio hic praesentium nemo, corporis itaque velit error architectoLorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate, odio voluptatum voluptates alias, ducimus harum blanditiis magnam recusandae laudantium maxime modi doloremque ab cupiditate explicabo voluptatibus porro odit quae.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nam incidunt reiciendis eaque doloremque praesentium? Eum alias adipisci, magnam blanditiis aut optio hic praesentium nemo, corporis itaque velit error architectoLorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate, odio voluptatum voluptates alias, ducimus harum blanditiis magnam recusandae laudantium maxime modi doloremque ab cupiditate explicabo voluptatibus porro odit quae.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nam incidunt reiciendis eaque doloremque praesentium? Eum alias adipisci, magnam blanditiis aut optio hic praesentium nemo, corporis itaque velit error architectoLorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate, odio voluptatum voluptates alias, ducimus harum blanditiis magnam recusandae laudantium maxime modi doloremque ab cupiditate explicabo voluptatibus porro odit quae.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nam incidunt reiciendis eaque doloremque praesentium? Eum alias adipisci, magnam blanditiis aut optio hic praesentium nemo, corporis itaque velit error architecto
-        </p>
-    </div>
+    <main>
+        <section id="about" class="main__about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate, odio voluptatum voluptates alias, ducimus harum blanditiis magnam recusandae laudantium maxime modi doloremque ab cupiditate explicabo voluptatibus porro odit quae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nam incidunt reiciendis eaque doloremque praesentium? Eum alias adipisci, magnam blanditiis aut optio hic praesentium nemo, corporis itaque velit error architecto!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate, odio voluptatum voluptates alias, ducimus harum blanditiis magnam recusandae laudantium maxime modi doloremque ab cupiditate explicabo voluptatibus porro odit quae.
+            </p>
+        </section>
+    </main>
+    <footer id="footer">
+        <section class="left">
+            <ul>
+                <li><a href="#header" onclick="alert('Red social de ejemplo')">LinkedIn</a></li>
+                <li><a href="#header" onclick="alert('Red social de ejemplo')">Twitter</a></li>
+                <li><a href="https://www.instagram.com/erickvasm/" target="_blank">Instagram</a></li>
+            </ul>
+        </section>
+        <section class="right">
+            
+        </section>
+    </footer>    
 </body>
 </html>
