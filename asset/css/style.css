@@ -131,29 +131,23 @@ header .logo{
 .desktop-list{
     display: none;
 }
-footer {
-    display: flex;  
-    width: 100%;
-    height: 150px;
-    background-color: #013A63;
+.main__contact{
+    position: relative;
+    padding: 100px;
+    background-color: #468faf;
 }
-footer section {
+footer { 
     display: flex;
-    width: 50%; 
     justify-content: center; 
-    align-items: center; 
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #013A63;
+    
 }
-footer .left ul {
+footer h2{
+    color: white;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    list-style: none; /* Para quitar bullets de lista */
-}
-.left li {
-    margin: 10px 0; 
-}
-
-.left a {
-    text-decoration: none; 
-    color: white;
 }
