@@ -1,3 +1,10 @@
+:root {
+    --main-color: #013A63;
+    --secundary-color: #012A4A;
+    --text-btn: #01497C;
+    --backgroud-seccion: #01497C;
+    --h2-line: #A9D6E5;
+}
 *{
     margin: 0;
     padding: 0;
@@ -42,10 +49,11 @@ header .logo{
     cursor: pointer;
     line-height: 0;
     transition: 0.5s;
+    z-index: 9;
 }
 .hero{
     background-image: linear-gradient(
-        -45deg,#012A4A,#013A63);
+        -45deg,var(--secundary-color),var(--main-color));
     position: relative;
     width: 100%;
     height: 100vh;
@@ -60,7 +68,7 @@ header .logo{
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top,#013A63,transparent);
+    background: linear-gradient(to top,var(--main-color),transparent);
     z-index: 1000;
 }
 .hero__img{
@@ -71,6 +79,11 @@ header .logo{
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+    background-image: url("https://i.ibb.co/SQHkkgJ/stars.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
 }
 #hero__title{
     position: absolute;
@@ -85,7 +98,7 @@ header .logo{
     padding: 8px 30px;
     border-radius: 40px;
     background: #fff;
-    color: #2b1055;
+    color: var(--text-btn);
     font-size: 1.5em;
     z-index: 9;
     transform: translateY(100px);
@@ -93,8 +106,9 @@ header .logo{
 .main__about{
     position: relative;
     padding: 100px;
-    background-color: #013A63;
+    background-color: var(--main-color);
 }
+
 .main__about h2{
     font-size: 32px;
     font-weight: bold;
@@ -104,25 +118,15 @@ header .logo{
     position: relative;
     color: #fff;
 }
-.main__about h2::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 120px;
-    height: 1px;
-    background: #ddd;
-    bottom: 1px;
-    left: calc(50% - 60px);
-}
 .main__about h2::after {
     content: '';
     position: absolute;
     display: block;
-    width: 40px;
+    width: 50px;
     height: 3px;
-    background: #47b2e4;
+    background: var(--h2-line);
     bottom: 0;
-    left: calc(50% - 20px);
+    left: 0;
 }
 .main__about p{
     font-size: 1em;
@@ -133,16 +137,85 @@ header .logo{
 }
 .main__contact{
     position: relative;
-    padding: 100px;
-    background-color: #468faf;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--backgroud-seccion);
 }
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto; 
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+.product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: #FFFFFF;
+}
+
+.product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--h2-line);
+}
+.product-detail--card {
+    width: 90%; /* ... */
+    min-width: 288px;
+    max-width: 400px;
+    min-height: 150px; /* altura mínima */
+    height: auto;  /* altura automática para evitar overflows */
+    margin: 15px auto;  /* auto para centrado automático */
+    padding: 15px;
+    background-color: var(--h2-line);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16); /* rgba con efecto sombreado */
+}
+
+.product-detail--card .clock {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px; /* Para separar el ícono del texto */
+    /* background-image: url("./assets/icons/clock.svg"); */
+    /* background-set de buenas prácticas para centrar imágenes e íconos */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product--card-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--white);
+}
+
+.product--card-body {
+    margin-bottom: 22px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+
 footer { 
     display: flex;
     justify-content: center; 
     align-items: center;
     width: 100%;
     height: 100px;
-    background-color: #013A63;
+    background-color: var(--main-color);
     
 }
 footer h2{
