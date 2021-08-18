@@ -11,13 +11,13 @@ header ul li{
 header ul li a{
     text-decoration: none;
     padding: 6px 15px;
-    color: #fff;
+    color: var(--text);
     border-radius: 20px;
 }
 header ul li a:hover,
 header ul li a.active{
-    background-color: #fff;
-    color: #2b1055 ;
+    background-color: var(--text);
+    color: var(--text-btn) ;
 }
 .desktop-list{
     display: flex;
