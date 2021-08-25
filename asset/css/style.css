@@ -27,6 +27,7 @@ header{
     left: 0;
     width: 100%;
     padding: 30px 100px;
+    min-width: 320px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,6 +60,7 @@ header .logo{
     width: 100%;
     height: 100vh;
     padding: 100px;
+    min-width: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +109,15 @@ header .logo{
 .main__about{
     position: relative;
     padding: 50px;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
     background-color: var(--main-color);
+}
+.main__about--detail{
+    margin-top: 50px;
+    margin-left: 50px;
 }
 .main__about h2{
     font-size: 4.2rem;
@@ -139,6 +149,7 @@ header .logo{
     font-weight: 500;
     line-height: 1.8rem;
     color: var(--text);
+    white-space: pre-line;
 }
 .desktop-list{
     display: none;
@@ -160,7 +171,6 @@ header .logo{
     text-align: center;
     color: var(--text);
 }
-
 .main__contact--detail h2 {
     margin-bottom: 20px;
     font-size: 2.4rem;
@@ -210,6 +220,7 @@ footer {
     align-items: center;
     width: 100%;
     height: 100px;
+    min-width: 320px;
     background-color: var(--main-color);
     
 }
