@@ -41,17 +41,8 @@ header .logo{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-.mobile-list {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    list-style: none;
-    color: var(--text);
-    font-size: 2.5rem;
-    cursor: pointer;
-    line-height: 0;
-    transition: 0.5s;
-    z-index: 9;
+.desktop-list{
+    display: none;
 }
 .hero{
     background-image: linear-gradient(
@@ -151,82 +142,38 @@ header .logo{
     color: var(--text);
     white-space: pre-line;
 }
-.desktop-list{
-    display: none;
-}
-.main__contact{
-    position: relative;
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    padding: 20px 10px;
-    background-color: var(--backgroud-seccion);
-}
-.main__contact--detail {
-    width: 90%;
-    min-width: 288px;
-    height: auto;
-    margin: 0 auto; 
-    margin-top: 50px;
-    text-align: center;
-    color: var(--text);
-}
-.main__contact--detail h2 {
-    margin-bottom: 20px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--text);
-}
-
-.main__contact--detail p {
-    margin-bottom: 20px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: var(--h2-line);
-}
-.contact__cards--details {
-    width: 90%; 
-    min-width: 288px;
-    max-width: 400px;
-    min-height: 150px; 
-    height: auto;  
-    margin: 15px auto;  
-    padding: 15px;
-    background-color: var(--h2-line);
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16); 
-}
-.contact__cards--title {
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-    color: var(--text);
-}
-
-.contact__cards--body {
-    margin-bottom: 22px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: black;
-}
-
 footer { 
     display: flex;
     justify-content: center; 
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 200px;
     min-width: 320px;
-    background-color: var(--main-color);
-    
+    background-color: var(--main-color);  
 }
 footer h2{
     color: var(--text);
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
+}
+@media only screen and (max-width:1200px){
+    .mobile-list{
+        display: block;
+        background-color:var(--text-btn);
+        color: var(--text);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        list-style: none;
+    }
+    .mobile-list i {
+        font-size: 30px;
+    }
 }
