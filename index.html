@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+    <link rel="shortcut icon" href="https://i.ibb.co/7CC91G9/favicon-256x256.png" />
     <link rel="stylesheet" href="/asset/css/style.css" />
     <link rel="stylesheet" href="/asset/css/desktop.css" media="(min-width: 1024px)"/>
 
@@ -18,7 +19,7 @@
       <nav class="navbar">    
         <ul class="desktop-list">
           <li><a href="#about" class="active">About</a></li>
-          <li><a href="#">Work</a></li>
+          <li><a href="#portfolio">Work</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <ul class="mobile-list">
@@ -26,7 +27,7 @@
             <a href="#about" alt="contact"><i class="bi bi-person-circle"></i>About</a>
           </li>
           <li>
-            <a href="#" alt="work"><i class="bi bi-wallet-fill"></i>Work</a>
+            <a href="#portfolio" alt="work"><i class="bi bi-wallet-fill"></i>Work</a>
           </li>
           <li>
             <a href="#contact" alt="contact"><i class="bi bi-telephone-fill"></i>Contact</a>
@@ -37,7 +38,7 @@
     <section class="hero">
       <img src="https://i.ibb.co/LkRtmzR/stars.png" alt="stars" class="hero__img"/>
       <h2 id="hero__title">Hello!</h2>
-      <a href="#" id="hero__btn">Explore</a>
+      <a href="#portfolio" id="hero__btn">Explore</a>
     </section>
     <main>
       <section id="about" class="main__about">
@@ -52,22 +53,49 @@
             activities.
           </p>
         </div>
+        <section class="main__about--cv">
+          <h3>Download CV</h3>
+          <button class="btn--download">
+            <a href="https://i.ibb.co/LkRtmzR/stars.png" download target="_blank" rel="noopener">
+              <i class="bi bi-cloud-download-fill"></i>
+              Download</a>
+          </button>
+        </section>
       </section>
-      <section id="contact" class="main__contact">
-        <div class="main__contact--detail">
-          <h2>Creamos un producto sin comparación.</h2>
-          <p>Confiable y diseñado para su uso diario.</p>
-        </div>
-        <section class="contact__cards--container">
-          <article class="contact__cards--details">
+      <section class="main__skills">
+        <h2>Skills</h2> 
+      </section>
+      <section id="portfolio" class="main__portfolio">
+        <h2>Portfolio</h2>
+        <section class="portfolio__cards--container">
+          <article class="portfolio__cards--details">
             <span class="icon__card"></span>
-            <p class="contact__cards--title">Tiempo real</p>
-            <p class="contact__cards--body">
-              Nuestra API toma información minuto a minuto sobre las tasas que
-              más determinan el comportamiento.
+            <p class="portfolio__cards--title">Nombre del proyecto</p>
+            <p class="portfolio__cards--body">
+              Descripcion
             </p>
+            <img>
           </article>
         </section>
+      </section>
+      <section class="main__contact" id="contact">
+        <h2>Contact</h2>
+        <article class="contact__card--detail">
+          <div class="img--contact">
+            <img src="https://karlacsphotography.com/wp-content/uploads/2020/03/MG_7051_3.jpg" alt="photo">
+          </div>
+          <ul class="contact--list">
+            <li>
+              <a href="#" alt="contact"><i class="bi bi-person-circle"></i>About</a>
+            </li>
+            <li>
+              <a href="#" alt="work"><i class="bi bi-wallet-fill"></i>Work</a>
+            </li>
+            <li>
+              <a href="#" alt="contact"><i class="bi bi-telephone-fill"></i>Contact</a>
+            </li>
+          </ul>       
+        </article>
       </section>
     </main>
     <footer id="footer">

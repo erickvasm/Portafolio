@@ -43,6 +43,26 @@ header .logo {
 .desktop-list {
   display: none;
 }
+.mobile-list {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 10px; 
+  bottom: 0;
+  left: 0;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  background-color: var(--text-btn);
+}
+.mobile-list i {
+  font-size: 30px;
+  color: var(--text);
+}
+.mobile-list a{
+  font-size: 0.5px;
+  color: var(--text-btn);
+}
 .hero {
   display: flex;
   position: relative;
@@ -146,8 +166,64 @@ header .logo {
   white-space: pre-line;
   color: var(--text); 
 }
-
-.main__contact {
+.main__about--cv{
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  text-align: center;
+}
+.btn--download{
+  position: relative;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text);
+  background: var(--text-btn);
+}
+.main__about--cv button i{
+  margin-right: 10px;
+  color: var(--text); 
+}
+.main__about--cv button a{
+  text-decoration: none;
+  color: var(--text);
+}
+.btn--download:hover {
+  background-color: var(--secundary-color);
+}
+.main__skills{
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  text-align: center;
+}
+.main__skills h2{
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  font-size: 4.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.main__skills h2::after {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: var(--h2-line);
+}
+.main__portfolio {
   position: relative;
   width: 100%;
   min-width: 320px;
@@ -155,7 +231,7 @@ header .logo {
   padding: 20px 10px;
   background-color: var(--main-color);
 }
-.main__contact--detail {
+.main__portfolio--detail {
   width: 90%;
   min-width: 288px;
   height: auto;
@@ -164,28 +240,35 @@ header .logo {
   text-align: center;
   color: var(--text);
 }
-.main__contact--detail h2 {
+.main__portfolio h2 {
+  position: relative;
   margin-bottom: 20px;
-  font-size: 2.4rem;
+  padding-bottom: 20px;
+  font-size: 4.2rem;
   font-weight: bold;
-  line-height: 2.6rem;
+  text-transform: uppercase;
+  text-align: center;
   color: var(--text);
 }
-.main__contact--detail p {
-  margin-bottom: 20px;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.8rem;
-  color: var(--h2-line);
+.main__portfolio h2::after {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: var(--h2-line);
 }
-.contact__cards--container {
+.portfolio__cards--container {
   width: 100%;
   height: auto;
-  padding-top: 80px;
+  padding-top: 10px;
   padding-bottom: 80px;
   text-align: center;
 }
-.contact__cards--details {
+.portfolio__cards--details {
   width: 90%;
   min-width: 288px;
   max-width: 400px;
@@ -197,20 +280,92 @@ header .logo {
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.16);
 }
-.contact__cards--title {
+.portfolio__cards--title {
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.8rem;
   color: var(--main-color);
 }
-
-.contact__cards--body {
+.portfolio__cards--body {
   margin-bottom: 22px;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: var(--secundary-color);
+}
+.main__contact{
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--secundary-color);
+}
+.main__contact h2 {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  font-size: 4.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text);
+}
+.main__contact h2::after {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: var(--h2-line);
+}
+.contact__card--detail{
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  min-height: 150px;
+  height: auto;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--backgroud-seccion);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.16);
+}
+.img--contact{
+  position: relative;
+  height: auto;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.contact__card--detail img{
+  border-radius: 70px;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+.contact--list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.contact--list i {
+  margin-right: 10px;
+  font-size: 3rem;
+  color: var(--text);
+}
+.contact--list a{
+  font-size: 1rem;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text);
 }
 footer {
   display: flex;
@@ -226,26 +381,4 @@ footer h2 {
   font-weight: 500;
   line-height: 1.8rem;
   color: var(--text);
-}
-@media only screen and (max-width: 1200px) {
-  .mobile-list {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    padding: 10px; 
-    bottom: 0;
-    left: 0;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    background-color: var(--text-btn);
-  }
-  .mobile-list i {
-    font-size: 30px;
-    color: var(--text);
-  }
-  .mobile-list a{
-    font-size: 0.5px;
-    color: var(--text-btn);
-  }
 }
