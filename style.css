@@ -350,11 +350,17 @@ header .logo {
 .contact--list{
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: space-between;
-  justify-content: space-around;
-  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
   list-style: none;
+}
+.contact__card--detail h3{
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--text);
 }
 .contact--list i {
   margin-right: 10px;
@@ -362,10 +368,18 @@ header .logo {
   color: var(--text);
 }
 .contact--list a{
-  font-size: 1rem;
+  display: flex;
   align-items: center;
+  font-size: 1.2rem;
   text-decoration: none;
   color: var(--text);
+    
+}
+.contact--list i:hover{
+  color: var(--text-btn);
+}
+.contact--list a:hover{
+  color: var(--text-btn);
 }
 footer {
   display: flex;
