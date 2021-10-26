@@ -234,7 +234,6 @@ header .logo {
   text-align: center;
 }
 .main__skills--details{
-  flex-shrink: 0;
   width: 100%;
   max-width: 100%;
   padding: 10px;
@@ -333,8 +332,11 @@ header .logo {
   line-height: 1.8rem;
   color: var(--secundary-color);
 }
+.portfolio__cards--body a{
+  color: var(--text-btn);
+}
 .portfolio__cards--details img{
-  width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
   transition: 0.3s;
 }
 .main__contact{
