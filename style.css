@@ -183,6 +183,7 @@ header .logo {
   cursor: pointer;
   color: var(--text);
   background: var(--text-btn);
+  transition: ease-in-out 0.3s;
 }
 .main__about--cv button i{
   margin-right: 10px;
@@ -223,6 +224,45 @@ header .logo {
   content: "";
   background: var(--h2-line);
 }
+.main__skills--container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.main__skills--details{
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+}
+.icon--box{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: var(--backgroud-seccion);
+  transition: ease-in-out 0.3s;
+}
+.icon--box i{
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+  color: #fff;
+}
+.icon--box:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.icon--box h3{
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 1.6rem;
+  color: #fff;
+}
 .main__portfolio {
   position: relative;
   width: 100%;
@@ -242,7 +282,7 @@ header .logo {
 }
 .main__portfolio h2 {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding-bottom: 20px;
   font-size: 4.2rem;
   font-weight: bold;
@@ -264,8 +304,7 @@ header .logo {
 .portfolio__cards--container {
   width: 100%;
   height: auto;
-  padding-top: 10px;
-  padding-bottom: 80px;
+  padding-bottom: 10px;
   text-align: center;
 }
 .portfolio__cards--details {
@@ -293,6 +332,10 @@ header .logo {
   font-weight: 500;
   line-height: 1.8rem;
   color: var(--secundary-color);
+}
+.portfolio__cards--details img{
+  width: 150px;
+  transition: 0.3s;
 }
 .main__contact{
   position: relative;
@@ -366,20 +409,22 @@ header .logo {
   margin-right: 10px;
   font-size: 3rem;
   color: var(--text);
+  transition: ease-in-out 0.3s;
 }
 .contact--list a{
   display: flex;
   align-items: center;
   font-size: 1.2rem;
+  font-weight: bold;
   text-decoration: none;
   color: var(--text);
-    
+  transition: ease-in-out 0.3s;
 }
 .contact--list i:hover{
-  color: var(--text-btn);
+  color: black;
 }
 .contact--list a:hover{
-  color: var(--text-btn);
+  color: black;
 }
 footer {
   display: flex;
