@@ -346,7 +346,7 @@ header .logo {
 }
 .portfolio__cards--details img{
   width: 250px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.17);
   transition: 0.3s;
 }
 .main__contact{
