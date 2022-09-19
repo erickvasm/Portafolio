@@ -20,11 +20,11 @@ body {
   overflow-x: hidden;
   background-color: var(--main-color);
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   width: 10px;
   background: var(--main-color);
 }
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   border-right: 2px solid var(--main-color);
@@ -56,7 +56,7 @@ header .logo {
   display: flex;
   position: fixed;
   width: 100%;
-  padding: 10px; 
+  padding: 10px;
   bottom: 0;
   left: 0;
   justify-content: space-around;
@@ -68,7 +68,7 @@ header .logo {
   font-size: 30px;
   color: var(--text);
 }
-.mobile-list a{
+.mobile-list a {
   font-size: 0.5px;
   color: var(--text-btn);
 }
@@ -81,7 +81,7 @@ header .logo {
   height: 100vh;
   padding: 100px;
   min-width: 320px;
-  background-image: linear-gradient(-45deg, var(--main-color), black);  
+  background-image: linear-gradient(-45deg, var(--main-color), black);
 }
 .hero::before {
   position: absolute;
@@ -90,7 +90,7 @@ header .logo {
   height: 100px;
   z-index: 1000;
   content: "";
-  background: linear-gradient(to top, var(--main-color), transparent);  
+  background: linear-gradient(to top, var(--main-color), transparent);
 }
 .hero__img {
   position: absolute;
@@ -119,9 +119,9 @@ header .logo {
   font-size: 1.5rem;
   z-index: 9;
   border-radius: 40px;
-  text-decoration: none; 
+  text-decoration: none;
   background: var(--text);
-  color: var(--text-btn); 
+  color: var(--text-btn);
   transform: translateY(100px);
 }
 .main__about {
@@ -173,9 +173,9 @@ header .logo {
   font-weight: 500;
   line-height: 1.8rem;
   white-space: pre-line;
-  color: var(--text); 
+  color: var(--text);
 }
-.main__about--cv{
+.main__about--cv {
   position: relative;
   width: 100%;
   min-width: 320px;
@@ -183,7 +183,7 @@ header .logo {
   padding: 20px 10px;
   text-align: center;
 }
-.btn--download{
+.btn--download {
   position: relative;
   padding: 12px 20px;
   border: 0;
@@ -194,18 +194,18 @@ header .logo {
   background: var(--text-btn);
   transition: ease-in-out 0.3s;
 }
-.main__about--cv button i{
+.main__about--cv button i {
   margin-right: 10px;
-  color: var(--text); 
+  color: var(--text);
 }
-.main__about--cv button a{
+.main__about--cv button a {
   text-decoration: none;
   color: var(--text);
 }
 .btn--download:hover {
   background-color: var(--secundary-color);
 }
-.main__skills{
+.main__skills {
   position: relative;
   width: 100%;
   min-width: 320px;
@@ -213,7 +213,7 @@ header .logo {
   padding: 20px 10px;
   text-align: center;
 }
-.main__skills h2{
+.main__skills h2 {
   position: relative;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -221,6 +221,9 @@ header .logo {
   font-weight: bold;
   text-transform: uppercase;
   color: var(--text);
+}
+.title__blog {
+  margin-top: 110px;
 }
 .main__skills h2::after {
   position: relative;
@@ -233,28 +236,28 @@ header .logo {
   content: "";
   background: var(--h2-line);
 }
-.main__skills--container{
+.main__skills--container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
   padding-top: 10px;
   padding-bottom: 80px;
-  text-align: center;
 }
-.main__skills--details{
+.main__skills--details {
   width: 100%;
   max-width: 100%;
   padding: 10px;
 }
-.icon--box{
+.icon--box {
   display: flex;
   align-items: center;
   padding: 20px;
   background: var(--backgroud-seccion);
   transition: ease-in-out 0.3s;
+  border-radius: 10px;
 }
-.icon--box i{
+.icon--box i {
   font-size: 32px;
   padding-right: 10px;
   line-height: 1;
@@ -263,13 +266,17 @@ header .logo {
 .icon--box:hover {
   background: rgba(255, 255, 255, 0.12);
 }
-.icon--box h3{
+.icon--box h3 {
   font-weight: 700;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-size: 1.6rem;
   color: #fff;
+}
+/*corregir*/
+.javascript-title {
+  font-size: 12px !important;
 }
 .main__portfolio {
   position: relative;
@@ -319,7 +326,7 @@ header .logo {
   width: 90%;
   min-width: 288px;
   max-width: 400px;
-  min-height: 150px;
+  min-height: 300px;
   height: auto;
   margin: 15px auto;
   padding: 15px;
@@ -341,15 +348,15 @@ header .logo {
   line-height: 1.8rem;
   color: var(--secundary-color);
 }
-.portfolio__cards--body a{
+.portfolio__cards--body a {
   color: var(--text-btn);
 }
-.portfolio__cards--details img{
+.portfolio__cards--details img {
   width: 250px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.17);
   transition: 0.3s;
 }
-.main__contact{
+.main__contact {
   position: relative;
   width: 100%;
   min-width: 320px;
@@ -378,7 +385,7 @@ header .logo {
   content: "";
   background: var(--h2-line);
 }
-.contact__card--detail{
+.contact__card--detail {
   width: 90%;
   min-width: 288px;
   max-width: 400px;
@@ -390,19 +397,19 @@ header .logo {
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.16);
 }
-.img--contact{
+.img--contact {
   position: relative;
   height: auto;
   padding-bottom: 25px;
   text-align: center;
 }
-.contact__card--detail img{
+.contact__card--detail img {
   border-radius: 70px;
   width: 120px;
   height: 120px;
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
-.contact--list{
+.contact--list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -411,7 +418,7 @@ header .logo {
   align-items: flex-start;
   list-style: none;
 }
-.contact__card--detail h3{
+.contact__card--detail h3 {
   padding-bottom: 20px;
   text-align: center;
   font-size: 2rem;
@@ -423,7 +430,7 @@ header .logo {
   color: var(--text);
   transition: ease-in-out 0.3s;
 }
-.contact--list a{
+.contact--list a {
   display: flex;
   align-items: center;
   font-size: 1.2rem;
@@ -432,10 +439,10 @@ header .logo {
   color: var(--text);
   transition: ease-in-out 0.3s;
 }
-.contact--list i:hover{
+.contact--list i:hover {
   color: black;
 }
-.contact--list a:hover{
+.contact--list a:hover {
   color: black;
 }
 footer {

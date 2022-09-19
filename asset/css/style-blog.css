@@ -1,0 +1,19 @@
+.blog-title,
+.blog-body {
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.blog-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.main__blog {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  text-align: center;
+}
